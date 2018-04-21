@@ -1,0 +1,13 @@
+{
+  "name": "elmssr",
+  "profile": "up",
+  "proxy": {
+    "command": "set NODE_ENV=production&&node build/server.js"
+  },
+  "hooks": {
+    "build": [
+      "yarn run build"
+    ],
+    "clean": "rm build/server.js"
+  }
+}
